@@ -15,12 +15,19 @@ printOut(newLine);
 
 printOut("--- Part 4, 5 --------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-
+const part4Number = 5;
+if (part4Number > 0) {
+    printOut("The number is positive");
+} else if (part4Number < 0) {
+    printOut("The number is negative");
+} else {
+    printOut("The number is zero");
+}
 printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-
+    
 printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
