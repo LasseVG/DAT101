@@ -25,15 +25,26 @@ if (part4Number > 0) {
 }
 printOut(newLine);
 
-printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
+printOut("--- Part 6 og 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-    
+/*const part6Number = Math.floor(Math.random() * 8) + 1;
+printOut("photo size = " + part6Number);
+if (part6Number >= 8) {
+    printOut("Thank you");
+} else (part6Number < 1) 
+    printOut("The image is too small"); */
+const imageMinSize = 4;
+const imageMaxSize =6;
+const imageUserSize = Math.floor(Math.random() * 8) + 1;
+printOut (`Image User Size = ${imageUserSize}`);
+if (imageUserSize >= imageMinSize) 
+    if (imageUserSize <= imageMaxSize){
+    printOut ("thank you");
+}
 printOut(newLine);
 
-printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
+("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-
-printOut(newLine);
 
 printOut("--- Part 8 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
