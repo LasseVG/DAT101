@@ -17,17 +17,19 @@ printOut(newLine);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
+printOut(newLine);
 const task2GuessValue = 45;
 let task2RandomValue =0;
 while (task2RandomValue !== task2GuessValue){
     task2RandomValue = Math.floor(Math.random() * 60) + 1;
 }
     printOut( "the random number is: " + task2RandomValue);
-
+printOut(newLine);
 
 
 printOut("--- Part 3 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
+printOut(newLine);
 const task3GuessValue = 45;
 let task3RandomValue = 0;
 let task3Attempts = 0;
@@ -45,7 +47,15 @@ printOut(newLine);
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-
+for(let i = 2; i < 200; i++){
+    let isPrime = true;
+    let j = i - 1;
+    while (!isPrime && j < 1){
+        if(i % j === 0){
+            isPrime = false;
+        }
+        j--;
+}
 printOut(newLine);
 
 printOut("--- Part 5 ----------------------------------------------------------------------------------------------");
