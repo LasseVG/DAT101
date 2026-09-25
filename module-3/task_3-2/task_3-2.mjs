@@ -3,17 +3,44 @@ import { printOut, newLine } from "../../common/script/utils.mjs";
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-
+let task1Line = "Line 1: ";
+for (let i = 1; i <= 10; i++){
+    task1Line += i + " ";
+}
+printOut(task1Line);
+task1Line = "Line2: ";
+for (let i = 10; i >= 1; i--){
+    task1Line += i + " ";
+}
+printOut(task1Line)
 printOut(newLine);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
+const task2GuessValue = 45;
+let task2RandomValue =0;
+while (task2RandomValue !== task2GuessValue){
+    task2RandomValue = Math.floor(Math.random() * 60) + 1;
+}
+    printOut( "the random number is: " + task2RandomValue);
 
-printOut(newLine);
+
 
 printOut("--- Part 3 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-
+const task3GuessValue = 45;
+let task3RandomValue = 0;
+let task3Attempts = 0;
+let task3TimeStart = Date.now();
+while (task3RandomValue !== task3GuessValue){
+    task3RandomValue = Math.floor(Math.random() * 1000000) + 1;
+    task3Attempts++;
+}
+let task3TimeEnd = Date.now();
+let task3TimeTaken = (task3TimeEnd - task3TimeStart);
+printOut(`The random number is: ${task3RandomValue}`);
+printOut(`Number of attempts: ${task3Attempts}`);
+printOut(`Time taken: ${task3TimeTaken} ms`);
 printOut(newLine);
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
